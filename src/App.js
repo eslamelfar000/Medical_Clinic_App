@@ -22,21 +22,21 @@ function App() {
         <Navbar />
         <ScrollToUp />
         <Routes>
-          <Route path='/clinic/home' element={<Home />} />
-          <Route exact path='/clinic/about' element={<About_Us />} />
-          <Route exact path='/clinic/team' element={<Our_team />} />
-          <Route exact path='/clinic/faq' element={<Faq />} />
-          <Route exact path='/clinic/booking' element={<Booking />} />
-          <Route exact path='/clinic/error' element={<Error />} />
-          <Route exact path='/clinic/login' element={<Login />} />
-          <Route exact path='/clinic/login/register' element={<Register />} />
-          <Route exact path='/clinic/login/forgot' element={<Forgot />} />
-          <Route path="/clinic" element={<Navigate to="/clinic/home" replace />} />
+          <Route path='/home' element={<Home />} />
+          <Route exact path='/about' element={<About_Us />} />
+          <Route exact path='/team' element={<Our_team />} />
+          <Route exact path='/faq' element={<Faq />} />
+          <Route exact path='/booking' element={<Booking />} />
+          <Route exact path='/error' element={<Error />} />
+          <Route exact path='/login' element={<Login />} />
+          <Route exact path='/login/register' element={<Register />} />
+          <Route exact path='/login/forgot' element={<Forgot />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
         </Routes>
 
         <Routes>
-          <Route exact path='/clinic/service' element={<Service />} />
-          <Route exact path='/clinic/service-details' element={<Service_details />} />
+          <Route exact path='/service' element={<Service />} />
+          <Route exact path='/service-details' element={<Service_details />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -83,12 +83,12 @@ function Navbar() {
             <div className="container">
                 <div className="navigate">
                     <div className="logo">
-                        <Link to="/clinic/home"><img src={logo} alt="" /></Link>
+                        <Link to="/home"><img src={logo} alt="" /></Link>
                     </div>
                     <div className="links">
                         <ul className='first_ul'>
                             <li className='first_li move'>
-                                <Link to="/clinic/home" className='first_link'>Home</Link>
+                                <Link to="/home" className='first_link'>Home</Link>
                             </li>
 
 
@@ -96,22 +96,22 @@ function Navbar() {
                                 <span className='first_link'>Pages <i className="fa fa-plus" aria-hidden="true"></i></span>
                                 <ul className='sec_ul pages'>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/about" className='link'>About Us</Link>
+                                        <Link to="/about" className='link'>About Us</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/team" className='link'>Our Team</Link>
+                                        <Link to="/team" className='link'>Our Team</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/faq" className='link'>FAQ's</Link>
+                                        <Link to="/faq" className='link'>FAQ's</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/booking" className='link'>Booking</Link>
+                                        <Link to="/booking" className='link'>Booking</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/error" className='link'>Error 404</Link>
+                                        <Link to="/error" className='link'>Error 404</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/login" className='link'>Login / Register</Link>
+                                        <Link to="/login" className='link'>Login / Register</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -121,10 +121,10 @@ function Navbar() {
                                 <span className='first_link'>Services <i className="fa fa-plus" aria-hidden="true"></i></span>
                                 <ul className='sec_ul services'>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/service" className='link'>Service</Link>
+                                        <Link to="/service" className='link'>Service</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/service-details" className='link'>Service Detail</Link>
+                                        <Link to="/service-details" className='link'>Service Detail</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -134,10 +134,10 @@ function Navbar() {
                                 <span className='first_link'>Blog <i className="fa fa-plus" aria-hidden="true"></i></span>
                                 <ul className='sec_ul blogs'>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/home" className='link'>Blogs</Link>
+                                        <Link to="/home" className='link'>Blogs</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/clinic/home" className='link'>Blog Detail</Link>
+                                        <Link to="/home" className='link'>Blog Detail</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -149,7 +149,7 @@ function Navbar() {
                             </li>
 
                             <li className='first_li move'>
-                                <Link to="/clinic/home" className='contact'>Contact Us <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+                                <Link to="/home" className='contact'>Contact Us <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
                             </li>
                         </ul>
                     </div>

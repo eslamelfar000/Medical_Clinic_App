@@ -1,0 +1,79 @@
+.error {
+  padding: 120px 0px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.error .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error span {
+  width: 145px;
+  height: 145px;
+  display: inline-block;
+  background-image: url(../../assets/error.gif);
+  background-size: 100%;
+  margin: 0 10px;
+}
+
+.error .error-emo {
+  font-size: 170px;
+  font-weight: 700;
+  color: var(--second-color);
+}
+
+.error .error-title h2 {
+  color: var(--second-color);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.error p {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+@media (max-width: 575px) {
+  .error span {
+    width: 90px;
+    height: 90px;
+  }
+
+  .error .error-emo {
+    font-size: 120px;
+  }
+
+  .error .error-title h2 {
+    font-size: 20px;
+  }
+
+  .error p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .error span {
+    width: 70px;
+    height: 70px;
+  }
+
+  .error .error-emo {
+    font-size: 80px;
+  }
+
+  .error .error-title h2 {
+    font-size: 18px;
+  }
+
+  .error p {
+    font-size: 12px;
+  }
+}

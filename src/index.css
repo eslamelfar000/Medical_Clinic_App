@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+:root {
+  --first-color: #5559ce;
+  --second-color: #1f2278;
+  --third-color: #f17732;
+  --four-color: #31348d;
+  --five-color: #cc4b00;
+}
+
+@media (max-width: 991px) {
+  .icon_1,
+  .icon_2,
+  .icon_3,
+  .icon_4,
+  .icon_5,
+  .icon_6,
+  .icon_7,
+  .icon_8,
+  .icon_9,
+  .icon_10 {
+    display: none;
+  }
+}

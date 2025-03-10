@@ -1,0 +1,69 @@
+.about-card {
+  width: 100%;
+  overflow: hidden;
+  padding: 100px 0px;
+  background: rgba(86, 90, 207, 0.1);
+}
+
+.about-card .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card .row .card-col {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card .row .col-info {
+  border: 2px solid var(--first-color);
+  border-radius: 20px;
+  width: 90%;
+}
+
+.about-card .row .col-intro {
+  background: white;
+  border-radius: 20px;
+  margin: 15px -15px -15px 15px;
+  padding: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about-card .row .col-intro h1 {
+  font-weight: 800;
+  color: var(--third-color);
+  font-size: 60px;
+  transition: 0.3s;
+}
+
+.about-card .row .col-intro h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--second-color);
+  transition: 0.3s;
+}
+
+.about-card .row .col-intro p {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.about-card .row .col-intro:hover {
+  background: var(--first-color);
+}
+
+.about-card .row .col-intro:hover > h1,
+.about-card .row .col-intro:hover > h3,
+.about-card .row .col-intro:hover > p {
+  color: white;
+}
+
+@media (max-width: 1199px) {
+  .about-card .row .card-col {
+    margin-bottom: 60px;
+  }
+}

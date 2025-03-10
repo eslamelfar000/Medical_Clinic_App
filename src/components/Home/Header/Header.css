@@ -1,0 +1,139 @@
+.header {
+  width: 100%;
+  overflow: hidden;
+  background: url(../../../assets/bg1.c53c8971.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover {
+  position: relative;
+  padding: 120px 0px;
+  background: url(../../../assets/bottom.png);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1;
+}
+
+.header .row {
+  display: flex;
+  align-items: center;
+}
+
+.header .row .image {
+  display: flex;
+  justify-content: center;
+}
+
+.header .row .image img {
+  width: 80%;
+  z-index: 10;
+  -webkit-animation: move 5s infinite alternate;
+  animation: move 5s infinite alternate;
+}
+
+.header .row .info {
+  padding-right: 30px;
+}
+
+.header .row .info span {
+  font-size: 18px;
+  color: var(--first-color);
+  font-weight: 600;
+  background: url(../../../assets/span_back.png);
+  padding: 5px 10px;
+}
+
+.header .row .info h1 {
+  font-size: 45px;
+  font-weight: 800;
+  color: var(--second-color);
+  margin: 15px 0px 30px 0px;
+}
+
+.header .row .info .read {
+  text-decoration: none;
+  color: white;
+  background: var(--third-color);
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.header .row .info .read:hover {
+  background-color: var(--five-color);
+}
+
+.header .icon_1,
+.header .icon_2,
+.header .icon_3,
+.header .icon_4,
+.header .icon_5 {
+  position: absolute;
+  z-index: -1;
+}
+
+.header .icon_1 {
+  top: 55%;
+  left: 5%;
+  -webkit-animation: move 3s infinite alternate;
+  animation: move 3s infinite alternate;
+}
+.header .icon_2 {
+  top: 20%;
+  left: 50%;
+  -webkit-animation: move 3s infinite alternate;
+  animation: move 3s infinite alternate;
+}
+.header .icon_3 {
+  top: 16%;
+  left: 20%;
+}
+.header .icon_4 {
+  top: 65%;
+  left: 45%;
+}
+.header .icon_5 {
+  top: 75%;
+  left: 75%;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 991px) {
+  .cover {
+    padding-top: 160px;
+  }
+  .header-col {
+    margin-bottom: 50px;
+  }
+
+  .header .row .info h1 {
+    font-size: 35px;
+  }
+
+  .header .row .info span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .row .info {
+    padding-right: 0px;
+  }
+  .header .row .info h1 {
+    font-size: 30px;
+  }
+}

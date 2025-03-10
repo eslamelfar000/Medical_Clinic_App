@@ -1,0 +1,12 @@
+.faq-ask {
+  padding: 120px 0px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.accordion-header {
+  background: var(--first-color) !important;
+  --bs-accordion-bg : none
+  color: white;
+}

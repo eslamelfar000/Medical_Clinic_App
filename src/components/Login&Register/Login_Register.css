@@ -1,0 +1,86 @@
+.login {
+  padding: 500px 0px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url(../../assets/bg1.c53c8971.jpg);
+}
+
+.login .login-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 60px 40px;
+  border-radius: 25px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.113);
+}
+
+.login .login-content img {
+  margin-bottom: 30px;
+}
+
+.login .login-content input {
+  display: block;
+  border: 1px solid rgb(226, 224, 224);
+  padding: 17px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.login .login-content input[type="text"]:hover,
+.login .login-content input[type="text"]:focus,
+.login .login-content input[type="password"]:hover,
+.login .login-content input[type="password"]:focus {
+  border: 1px solid var(--second-color);
+}
+
+.login .login-content input[type="submit"] {
+  background: var(--first-color);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.login .login-content input[type="submit"]:hover {
+  background: var(--four-color);
+}
+
+.login .login-content .forgot {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--first-color);
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.login .login-content .forgot:hover {
+  color: var(--four-color);
+}
+
+.login .login-content p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0px;
+  opacity: 0.7;
+  margin-top: 50px;
+}
+
+.login .login-content .toRegister .link-register {
+  background: var(--third-color);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.login .login-content .toRegister .link-register:hover {
+  background: var(--five-color);
+}

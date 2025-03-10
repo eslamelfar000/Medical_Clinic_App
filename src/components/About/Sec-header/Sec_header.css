@@ -1,0 +1,128 @@
+.sec-header {
+  padding: 180px 0px;
+  text-align: center;
+  background: url(../../../assets/footer.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.sec-header::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../../../assets//header-bottom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  z-index: -2;
+}
+
+.sec-header h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--second-color);
+}
+
+.sec-header .sub-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sec-header .sub-header .sub-header-info {
+  padding: 15px 40px;
+  background: var(--first-color);
+  display: flex;
+  color: white;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.sec-header .sub-header .sub-header-info a,
+.sec-header .sub-header .sub-header-info h4,
+.sec-header .sub-header .sub-header-info span {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.sec-header .sub-header .sub-header-info span {
+  margin: 0px 15px;
+  opacity: 0.6;
+}
+
+.sec-header .icon_1,
+.sec-header .icon_2,
+.sec-header .icon_3,
+.sec-header .icon_4 {
+  position: absolute;
+  z-index: -1;
+}
+
+.sec-header .icon_1 {
+  top: 25%;
+  left: 10%;
+  -webkit-animation: moveX 3s infinite alternate;
+  animation: moveX 3s infinite alternate;
+}
+.sec-header .icon_2 {
+  top: 88%;
+  left: 65%;
+  -webkit-animation: moveX 3s infinite alternate;
+  animation: moveX 3s infinite linear;
+}
+.sec-header .icon_3 {
+  top: 80%;
+  left: 25%;
+  -webkit-animation: moveY 7s infinite alternate;
+  animation: moveY 7s infinite alternate;
+}
+.sec-header .icon_4 {
+  top: 25%;
+  left: 85%;
+  -webkit-animation: spin 9s infinite linear;
+  animation: spin 9s infinite linear;
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

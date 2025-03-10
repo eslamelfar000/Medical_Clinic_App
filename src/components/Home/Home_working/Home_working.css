@@ -1,0 +1,256 @@
+.work {
+  padding: 70px 0px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: url(../../../assets/work_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  /* background: url(../../../assets/bg1.c53c8971.jpg); */
+}
+
+.work .row {
+  display: flex;
+  justify-content: center;
+}
+
+.work .row .intro {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.work .row .intro .head-span {
+  font-size: 18px;
+  color: var(--third-color);
+  font-weight: 600;
+  background: url(../../../assets/span_back_2.png);
+  padding: 5px 10px;
+}
+
+.work .row .intro h1 {
+  font-size: 40px;
+  margin: 20px 0px;
+  font-weight: 800;
+  color: var(--second-color);
+}
+
+.work .row .work_info {
+  padding: 70px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.097);
+  overflow: hidden;
+}
+
+.work .row .active_col {
+  color: white;
+  background: var(--third-color);
+  transform: translateY(-10%);
+}
+
+.work .row .diff {
+  background: white;
+  position: relative;
+  z-index: 0;
+}
+
+.work .row .work_info span {
+  transition: all 0.5s;
+  z-index: 9;
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  line-height: 80px;
+  -webkit-text-stroke: 2px #f17732;
+  text-shadow: 0 10px 0 #ffe3d3;
+  color: transparent;
+}
+
+.work .row .active_col span {
+  text-shadow: 0 10px 0 #f38f5e;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.work .row .active_col h3,
+.work .row .diff h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0px;
+  margin-top: 40px;
+}
+
+.work .row .active_col h3 {
+  color: white;
+}
+
+.work .row .diff h3 {
+  color: var(--third-color);
+  transition: 0.2s;
+}
+
+.work .row .work_info p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  transition: 0.2s;
+}
+
+.work .row .work_info a {
+  text-decoration: none;
+  padding: 10px 5px 10px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.work .row .work_info a i {
+  font-size: 14px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.work .row .active_col a {
+  color: var(--third-color);
+  background: white;
+}
+
+.work .row .diff a {
+  background: #e1e2f6;
+  color: var(--first-color);
+  transition: 0.3s;
+}
+
+.work .row .active_col a i {
+  background: var(--third-color);
+  color: white;
+}
+
+.work .row .diff a i {
+  color: var(--first-color);
+  background: white;
+  transition: 0.3s;
+}
+
+.work .row .diff::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background: var(--third-color);
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.work .row .diff:hover::before {
+  height: 100%;
+  bottom: 0;
+  top: auto;
+}
+
+.work .row .diff:hover > h3,
+.work .row .diff:hover > p {
+  color: white;
+}
+
+.work .row .diff:hover > span {
+  text-shadow: 0 10px 0 #f38f5e;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.work .row .diff:hover > a {
+  color: var(--third-color);
+  background: white;
+}
+
+.work .row .diff:hover > a i {
+  color: white;
+  background: var(--third-color);
+}
+
+.work .icon_1,
+.work .icon_2,
+.work .icon_3 {
+  position: absolute;
+  z-index: -1;
+}
+
+.work .icon_1 {
+  top: 50%;
+  left: 88%;
+  -webkit-animation: spin 9s infinite linear;
+  animation: spin 9s infinite linear;
+}
+.work .icon_2 {
+  top: 80%;
+  left: 37%;
+  -webkit-animation: moveY 7s infinite alternate;
+  animation: moveY 7s infinite alternate;
+}
+.work .icon_3 {
+  top: 35%;
+  left: 10%;
+  -webkit-animation: spin 9s infinite linear;
+  animation: spin 9s infinite linear;
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .work {
+    background: url(../../../assets/bg1.c53c8971.jpg);
+  }
+  .work .row .active_col {
+    transform: translateY(0);
+  }
+  .work-col {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .work .row .intro .head-span {
+    font-size: 16px;
+  }
+  .work .row .intro h1 {
+    font-size: 30px;
+  }
+}

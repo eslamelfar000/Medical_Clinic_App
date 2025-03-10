@@ -22,7 +22,7 @@ function App() {
         <Navbar />
         <ScrollToUp />
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route exact path='/about' element={<About_Us />} />
           <Route exact path='/team' element={<Our_team />} />
           <Route exact path='/faq' element={<Faq />} />
@@ -31,7 +31,7 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/login/register' element={<Register />} />
           <Route exact path='/login/forgot' element={<Forgot />} />
-          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/" element={<Navigate to="/" replace />} />
         </Routes>
 
         <Routes>

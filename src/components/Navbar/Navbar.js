@@ -88,7 +88,7 @@ function Navbar() {
                     <div className="links">
                         <ul className='first_ul'>
                             <li className='first_li move'>
-                                <Link to="/home" className='first_link'>Home</Link>
+                                <Link to="/" className='first_link'>Home</Link>
                             </li>
 
 
@@ -134,10 +134,10 @@ function Navbar() {
                                 <span className='first_link'>Blog <i className="fa fa-plus" aria-hidden="true"></i></span>
                                 <ul className='sec_ul blogs'>
                                     <li className='sec_li'>
-                                        <Link to="/home" className='link'>Blogs</Link>
+                                        <Link to="/" className='link'>Blogs</Link>
                                     </li>
                                     <li className='sec_li'>
-                                        <Link to="/home" className='link'>Blog Detail</Link>
+                                        <Link to="/" className='link'>Blog Detail</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -149,7 +149,7 @@ function Navbar() {
                             </li>
 
                             <li className='first_li move'>
-                                <Link to="/home" className='contact'>Contact Us <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+                                <Link to="/" className='contact'>Contact Us <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
                             </li>
                         </ul>
                     </div>
@@ -175,7 +175,7 @@ function Navbar() {
                     </div>
                     <ul className='side-first-ul'>
                         <li className='side-li'>
-                            <Link to="/home" className='home'>Home</Link>
+                            <Link to="/" className='home'>Home</Link>
                         </li>
                         <li className='side-li'>
                             <div className="link-content" onClick={openList_1} >
@@ -188,19 +188,19 @@ function Navbar() {
                                         <Link to="/about">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link to="/home">Our Team</Link>
+                                        <Link to="/">Our Team</Link>
                                     </li>
                                     <li>
-                                        <Link to="/home">FAQ's</Link>
+                                        <Link to="/">FAQ's</Link>
                                     </li>
                                     <li>
-                                        <Link to="/home">Booking</Link>
+                                        <Link to="/">Booking</Link>
                                     </li>
                                     <li>
-                                        <Link to="/home">Error 404</Link>
+                                        <Link to="/">Error 404</Link>
                                     </li>
                                     <li>
-                                        <Link to="/home">Login / Register</Link>
+                                        <Link to="/">Login / Register</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -213,10 +213,10 @@ function Navbar() {
                             <div className="side-down side-2">
                                 <ul className='down-ul'>
                                     <li>
-                                        <Link to="/home">Service</Link>
+                                        <Link to="/">Service</Link>
                                     </li>
                                     <li>
-                                        <Link to="/home">Service Detail</Link>
+                                        <Link to="/">Service Detail</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -229,10 +229,10 @@ function Navbar() {
                             <div className="side-down side-3">
                                 <ul className='down-ul'>
                                     <li>
-                                        <Link to="/home">Blogs</Link>
+                                        <Link to="/">Blogs</Link>
                                     </li>
                                     <li>
-                                        <Link to="/home">Blogs Detail</Link>
+                                        <Link to="/">Blogs Detail</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -245,27 +245,27 @@ function Navbar() {
 
                     <ul className='last'>
                         <li>
-                            <Link to="/home" className='face'>
+                            <Link to="/" className='face'>
                                 <i className='fa fa-facebook'></i>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/home">
+                            <Link to="/">
                                 <i className='fa fa-twitter'></i>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/home">
+                            <Link to="/">
                                 <i className='fa fa-instagram'></i>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/home">
+                            <Link to="/">
                                 <i className='fa fa-linkedin'></i>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/home">
+                            <Link to="/">
                                 <i className='fa fa-google'></i>
                             </Link>
                         </li>

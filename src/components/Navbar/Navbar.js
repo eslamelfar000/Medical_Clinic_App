@@ -83,7 +83,7 @@ function Navbar() {
             <div className="container">
                 <div className="navigate">
                     <div className="logo">
-                        <Link to="/home"><img src={logo} alt="" /></Link>
+                        <Link to="/"><img src={logo} alt="" /></Link>
                     </div>
                     <div className="links">
                         <ul className='first_ul'>
